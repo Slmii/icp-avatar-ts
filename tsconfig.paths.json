@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@ic-backend/functions": ["./.dfx/local/canisters/avatar/index.js"],
+			"@ic-backend/types": ["./.dfx/local/canisters/avatar/avatar.did.d.ts"]
+		}
+	}
+}

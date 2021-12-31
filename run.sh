@@ -24,5 +24,5 @@ echo
 echo == Deploy.
 echo
 
-yarn start
+npm start
 # dfx deploy

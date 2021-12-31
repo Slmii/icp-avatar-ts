@@ -1,34 +1,34 @@
 {
-  "canisters": {
-    "test": {
-      "main": "src/test/main.mo",
-      "type": "motoko"
-    },
-    "frontend" : {
-      "dependencies": ["test"],
-      "frontend": {
-        "entrypoint": "build/index.html"
-      },
-      "source": [
-        "build"
-      ],
-      "type": "assets"
-    }
-  },
-  "defaults": {
-    "build": {
-      "output": "canisters",
-      "packtool": ""
-    }
-  },
-  "dfx": "0.7.2",
-  "networks": {
-    "local": {
-      "bind": "127.0.0.1:8000",
-      "type": "ephemeral"
-    }
-  },
-  "version": 1
+	"canisters": {
+		"avatar": {
+			"main": "src/avatar/main.mo",
+			"type": "motoko"
+		},
+		"frontend": {
+			"dependencies": [
+				"avatar"
+			],
+			"frontend": {
+				"entrypoint": "build/index.html"
+			},
+			"source": [
+				"build"
+			],
+			"type": "assets"
+		}
+	},
+	"defaults": {
+		"build": {
+			"output": "canisters",
+			"packtool": ""
+		}
+	},
+	"dfx": "0.8.4",
+	"networks": {
+		"local": {
+			"bind": "127.0.0.1:8000",
+			"type": "ephemeral"
+		}
+	},
+	"version": 1
 }
-
- 
